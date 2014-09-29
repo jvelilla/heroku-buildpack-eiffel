@@ -55,7 +55,7 @@ echo "Eiffel Compiler installed" | indent
 
 EC_CONFIG=$(find $BUILD_DIR -maxdepth 1 -name "*.ecf" -print -quit | head -n 1)
 EC_TARGET=$(sed -n 's/.*target name="\([A-z]*\).*/\1/p' <$EC_CONFIG | head -n 1)
-EC_TARGET=restbucks
+EC_TARGET=roc_api
 
 echo "-----> Compiling $EC_CONFIG for target $EC_TARGET"
 
